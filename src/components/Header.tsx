@@ -1,5 +1,6 @@
 import { Box, Github, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import ThemeToggle from "./ThemeToggle";
 
 const Header = () => {
   return (
@@ -28,6 +29,7 @@ const Header = () => {
         </nav>
 
         <div className="flex items-center gap-3">
+          <ThemeToggle />
           <Button variant="ghost" size="icon" asChild>
             <a href="https://github.com" target="_blank" rel="noopener noreferrer">
               <Github className="h-5 w-5" />
